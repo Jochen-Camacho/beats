@@ -1,0 +1,160 @@
+.feedContent {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+
+.feedSide {
+  background-color: var(--lightBlack);
+  padding: 20px;
+  border-radius: 5px;
+  max-height: 480px;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+.popularTracksCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popularTackOuter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popularTrack {
+  margin: auto 0;
+  height: 60px;
+}
+
+.popularTrack p:first-child {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.popularTrack p:nth-child(2) {
+  color: var(--L2Grey);
+  font-size: 0.85rem;
+}
+
+.position {
+  color: var(--L2Grey);
+}
+
+.trendingSearchesCont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.feedSideHead {
+  grid-column: span 2;
+  margin-bottom: 15px;
+}
+
+.trendingSearch {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: var(--L1Grey);
+  border-radius: 30px;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.feedMainContent {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.feedPost {
+  border-radius: 5px;
+  background-color: var(--lightBlack);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedHead {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.feedFoot,
+.feedStats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedFooter {
+  margin-top: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--L2Grey);
+  font-size: 0.9rem;
+}
+
+.feedStats {
+  gap: 20px;
+}
+
+.feedStat {
+  display: flex;
+  align-items: center;
+
+  column-gap: 5px;
+}
+
+.feedStat div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedStat svg {
+  color: white;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .feedContent {
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: auto auto 1fr;
+  }
+  .feedSide {
+    grid-column: 1;
+  }
+  .feedSideTrending {
+    grid-row: 1;
+  }
+  .feedSideArtist {
+    grid-row: 2;
+  }
+  .feedMainContent {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .feedSide {
+    display: none;
+  }
+  .feedContent {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .feedMainContent {
+    grid-column: 1;
+  }
+}

@@ -1,0 +1,86 @@
+.trackItemCont {
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.65s;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.trackItemCont:hover {
+  background-color: var(--lightBlack);
+}
+
+.trackItemImg {
+  position: relative;
+}
+
+.trackItemImg img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.trackItemName {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trackItemName p {
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 80%;
+  color: white;
+}
+
+.trackItemMeta {
+  display: flex;
+  align-items: center;
+  column-gap: 7.5px;
+  font-size: 0.9rem;
+  justify-content: space-between;
+}
+
+.trackArtist {
+  color: var(--L2Grey);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.trackPrice {
+  color: var(--secondaryBlue);
+  font-weight: 600;
+}
+
+.trackItemMeta,
+.trackItemName {
+  padding: 0 4px;
+}
+
+.trackItemPlayCont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.trackItemPlay {
+  margin-left: 2px;
+}

@@ -1,0 +1,10 @@
+.passwordCont {
+  display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+  .passwordCont {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

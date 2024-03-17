@@ -1,0 +1,278 @@
+.trackDetCont {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  column-gap: 3vw;
+}
+
+.trackDetContentInner img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.trackDetContent {
+  grid-row: 1 / span 2;
+  background-color: var(--black);
+  padding: 30px;
+  border-radius: 10px;
+  height: fit-content;
+  min-width: 300px;
+}
+
+.trackDetContentInner {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.trackDetNameArtist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2.5vh;
+  margin-bottom: 2.5vh;
+  border-bottom: 1px solid var(--L1Grey);
+}
+
+.trackDetName {
+  font-size: clamp(1rem, 2vw, 2rem);
+  margin: 2.5px 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.trackDetArtist {
+  color: var(--L3Grey);
+}
+
+.trackDetMetaData {
+  color: var(--L2Grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.trackDetTagsCont {
+  display: flex;
+  flex-direction: column;
+}
+.trackDetTagsCont h4 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--L2Grey);
+  margin-bottom: 10px;
+}
+
+.trackDetTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+  max-width: 250px;
+}
+
+.trackDetSecondary {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.trackDetPurchase,
+.trackDetCommentCont {
+  background-color: var(--black);
+  border-radius: 10px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tractDetPurchOptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 50px 0;
+  margin-bottom: 30px;
+}
+
+.tractDetPurchOption {
+  background-color: black;
+  padding: 30px 50px;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid var(--L1Grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trackDetPurchase h2,
+.trackDetCommentTitle {
+  font-weight: 500;
+  font-size: clamp(0.75rem, 5vw, 1.25rem);
+}
+
+.trackDetPurchTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trackDetPurchTop button {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-block: 5px;
+}
+
+.cart {
+  font-size: 20px;
+  color: white;
+}
+
+.trackDetCommentCont {
+  height: 100%;
+}
+
+.trackDetComment {
+  display: flex;
+  padding: 15px 0;
+  align-items: flex-start;
+  column-gap: 15px;
+}
+
+.commentData {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentUser {
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 3px;
+}
+
+.commentBody {
+  font-size: 0.95rem;
+}
+
+.trackDetComment img,
+.trackDetAddComment img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.trackDetAddComment {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding: 25px 0;
+}
+
+.trackDetAddComment input[type="text"] {
+  background-color: var(--black);
+  border: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.trackDetAddComment input[type="text"]:focus {
+  outline: none;
+}
+
+.commentMeta {
+  display: flex;
+  margin-top: 10px;
+  color: var(--L3Grey);
+  font-size: 0.85rem;
+  gap: 5px;
+}
+
+.addCommentCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.icon {
+  height: 1.2em;
+  width: auto;
+}
+
+.optionClicked {
+  background-color: #09226d48;
+  border: 1.5px solid blue;
+}
+
+@media only screen and (max-width: 400px) {
+  .trackDetContentInner img {
+    width: 100px;
+  }
+  .trackDetInfoCont,
+  .trackDetName {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .trackDetTagsCont {
+    display: none;
+  }
+  .trackDetContentInner img {
+    width: 200px;
+  }
+  .trackDetMetaData {
+    display: grid;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .trackDetCont {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .trackDetContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .trackDetContentInner {
+    flex-direction: row;
+  }
+  .trackDetNameArtist {
+    padding: 0;
+    margin: 0;
+    border: none;
+    align-items: flex-start;
+  }
+  .trackDetInfoCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tractDetPurchOptions {
+    grid-template-columns: 1fr;
+  }
+  .tractDetPurchOption {
+    padding: 10px;
+  }
+  .trackDetAddComment input[type="text"] {
+    width: 70%;
+    font-size: 0.8rem;
+  }
+  .trackDetComment img,
+  .trackDetAddComment img {
+    height: 35px;
+    width: 35px;
+  }
+  .trackDetContentInner img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+}

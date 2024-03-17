@@ -1,0 +1,75 @@
+.innerFormPageCont {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7vh;
+}
+
+.formPageCont {
+  margin: auto;
+}
+
+.formPageTitle {
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: center;
+  font-size: clamp(1rem, 7.5vw, 2.5rem);
+}
+
+.formPageContent {
+  background-color: var(--lightBlack);
+  border-radius: 10px;
+  border: 1px solid var(--L1Grey);
+  width: 45vw;
+  max-width: 450px;
+  min-width: 320px;
+}
+
+.formPageContent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  gap: 10px;
+}
+
+.formEntryCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formSubmitBtn,
+.formEntry {
+  color: white;
+  margin: 5px;
+  height: 4vh;
+  border-radius: 5px;
+  border: 1px solid var(--L1Grey);
+}
+
+.formEntry {
+  background-color: var(--black);
+  border: 1px solid var(--L1Grey);
+  text-indent: 10px;
+}
+
+.formSubmitBtn {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.link a {
+  color: white;
+  text-decoration: none;
+}
+
+.formMsg {
+  color: var(--L3Grey);
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.loginMsg {
+  margin: 10px auto;
+}

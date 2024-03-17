@@ -1,0 +1,440 @@
+[
+    {
+        "audio": "track1",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2734e25b2151463edf60b1a2e36",
+        "title": "Neon Dreams",
+        "artist": "DJ Neon",
+        "price": {
+            "monthly": "$2.99",
+            "exclusive": "$299"
+        },
+        "genre": "Electronic",
+        "free": false,
+        "trending": true,
+        "release_date": "2024-03-05",
+        "tags": [
+            "electronic",
+            "party",
+            "neon",
+            "night",
+            "dance"
+        ],
+        "popularity_score": 87
+    },
+    {
+        "audio": "track19",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2732a41b0f03991c2300a64d089",
+        "title": "Sunset Boulevard",
+        "artist": "The Dreamers",
+        "price": {
+            "monthly": "$1.49",
+            "exclusive": "$149"
+        },
+        "genre": "Pop",
+        "free": true,
+        "trending": false,
+        "release_date": "2024-03-12",
+        "tags": [
+            "pop",
+            "sunset",
+            "chill",
+            "vibes"
+        ],
+        "popularity_score": 65
+    },
+    {
+        "audio": "track3",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2731faa75da739b82f4230f4c75",
+        "title": "Retro Waves",
+        "artist": "Vinyl Spinners",
+        "price": {
+            "monthly": "$2.50",
+            "exclusive": "$250"
+        },
+        "genre": "Pop",
+        "free": false,
+        "trending": true,
+        "release_date": "2024-02-25",
+        "tags": [
+            "retro",
+            "80s",
+            "synthwave",
+            "vinyl",
+            "waves"
+        ],
+        "popularity_score": 78
+    },
+    {
+        "audio": "track4",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2733cdd195b11f2c3c9d6b7efda",
+        "title": "Urban Echoes",
+        "artist": "City Soundz",
+        "price": {
+            "monthly": "$3.99",
+            "exclusive": "$399"
+        },
+        "genre": "Hip Hop",
+        "free": false,
+        "trending": true,
+        "release_date": "2024-01-30",
+        "tags": [
+            "hip hop",
+            "urban",
+            "echoes",
+            "beat",
+            "rhythm"
+        ],
+        "popularity_score": 92
+    },
+    {
+        "audio": "track5",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b273ebba5c12e63330b86eee392d",
+        "title": "Lost in Translation",
+        "artist": "Urban Myths",
+        "price": {
+            "monthly": "$2.99",
+            "exclusive": "$279"
+        },
+        "genre": "Hip Hop",
+        "free": false,
+        "trending": false,
+        "release_date": "2024-03-18",
+        "tags": [
+            "world",
+            "mystery",
+            "exotic",
+            "translation",
+            "beat"
+        ],
+        "popularity_score": 76
+    },
+    {
+        "audio": "track6",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2731306a79239f51cc73db6f681",
+        "title": "Crystal Visions",
+        "artist": "Sonic Seer",
+        "price": {
+            "monthly": "$1.99",
+            "exclusive": "$199"
+        },
+        "genre": "Electronic",
+        "free": true,
+        "trending": false,
+        "release_date": "2024-03-28",
+        "tags": [
+            "electronic",
+            "crystal",
+            "visions",
+            "future",
+            "synth"
+        ],
+        "popularity_score": 84
+    },
+    {
+        "audio": "track7",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2739fc8872418c9bb08bf4086e5",
+        "title": "Heartbeat City",
+        "artist": "Rhythm Raiders",
+        "price": {
+            "monthly": "$2.50",
+            "exclusive": "$255"
+        },
+        "genre": "Pop",
+        "free": false,
+        "trending": true,
+        "release_date": "2024-02-14",
+        "tags": [
+            "pop",
+            "city",
+            "heartbeat",
+            "love",
+            "beat"
+        ],
+        "popularity_score": 69
+    },
+    {
+        "audio": "track8",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b273be5eb40174038f7870911645",
+        "title": "Echoes of the Past",
+        "artist": "The Anachronists",
+        "price": {
+            "monthly": "$3.49",
+            "exclusive": "$349"
+        },
+        "genre": "Ambient",
+        "free": false,
+        "trending": false,
+        "release_date": "2024-02-22",
+        "tags": [
+            "ambient",
+            "past",
+            "echoes",
+            "instrumental",
+            "relaxing"
+        ],
+        "popularity_score": 71
+    },
+    {
+        "audio": "track9",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b27353742bf91d9978015a1fb04b",
+        "title": "Midnight Drive",
+        "artist": "Night Cruisers",
+        "price": {
+            "monthly": "$1.75",
+            "exclusive": "$175"
+        },
+        "genre": "Hip Hop",
+        "free": true,
+        "trending": true,
+        "release_date": "2024-01-05",
+        "tags": [
+            "synthwave",
+            "drive",
+            "night",
+            "80s",
+            "chill"
+        ],
+        "popularity_score": 89
+    },
+    {
+        "audio": "track10",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2738a7a4147ef31958060745223",
+        "title": "Rising Sun",
+        "artist": "Eastern Echoes",
+        "price": {
+            "monthly": "$2.20",
+            "exclusive": "$220"
+        },
+        "genre": "Ambient",
+        "free": false,
+        "trending": true,
+        "release_date": "2024-03-10",
+        "tags": [
+            "chill",
+            "sun",
+            "morning",
+            "relax",
+            "eastern"
+        ],
+        "popularity_score": 92
+    },
+    {
+        "audio": "track11",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2733433ede85d82bda2e4f58a66",
+        "title": "Blaze of Glory",
+        "artist": "The Trailblazers",
+        "price": {
+            "monthly": "$3.00",
+            "exclusive": "$300"
+        },
+        "genre": "Hip Hop",
+        "free": false,
+        "trending": true,
+        "release_date": "2024-04-01",
+        "tags": [
+            "rock",
+            "blaze",
+            "glory",
+            "guitar",
+            "anthem"
+        ],
+        "popularity_score": 88
+    },
+    {
+        "audio": "track12",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2735cef67c48c7c47c43d747516",
+        "title": "Galactic Groove",
+        "artist": "Space Jammers",
+        "price": {
+            "monthly": "$2.75",
+            "exclusive": "$275"
+        },
+        "genre": "Hip Hop",
+        "free": false,
+        "trending": false,
+        "release_date": "2024-03-15",
+        "tags": [
+            "funk",
+            "galactic",
+            "groove",
+            "space",
+            "dance"
+        ],
+        "popularity_score": 82
+    },
+    {
+        "audio": "track13",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2735ed10298851dd15f4523b4b4",
+        "title": "Dream Weaver",
+        "artist": "Luna Phases",
+        "price": {
+            "monthly": "$1.99",
+            "exclusive": "$199"
+        },
+        "genre": "Ambient",
+        "free": true,
+        "trending": false,
+        "release_date": "2024-01-20",
+        "tags": [
+            "ambient",
+            "dream",
+            "weaver",
+            "sleep",
+            "calm"
+        ],
+        "popularity_score": 75
+    },
+    {
+        "audio": "track14",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b27307c852d094572e02a3cfc44a",
+        "title": "Whispering Winds",
+        "artist": "The Breezes",
+        "price": {
+            "monthly": "$3.25",
+            "exclusive": "$325"
+        },
+        "genre": "Hip Hop",
+        "free": false,
+        "trending": false,
+        "release_date": "2024-03-08",
+        "tags": [
+            "hip hop",
+            "wind",
+            "whisper",
+            "nature",
+            "relax"
+        ],
+        "popularity_score": 64
+    },
+    {
+        "audio": "track15",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b273df4a52d9abc981a39707b2eb",
+        "title": "Cyberpunk Serenade",
+        "artist": "Neon Nights",
+        "price": {
+            "monthly": "$2.50",
+            "exclusive": "$250"
+        },
+        "genre": "Electronic",
+        "free": false,
+        "trending": true,
+        "release_date": "2024-02-28",
+        "tags": [
+            "electronic",
+            "cyberpunk",
+            "serenade",
+            "future"
+        ],
+        "popularity_score": 90
+    },
+    {
+        "audio": "track16",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b273b2ef9e5943a90e983943ca55",
+        "title": "Oceanic Dreams",
+        "artist": "Wave Riders",
+        "price": {
+            "monthly": "$1.80",
+            "exclusive": "$180"
+        },
+        "genre": "Ambient",
+        "free": true,
+        "trending": true,
+        "release_date": "2024-02-05",
+        "tags": [
+            "chillout",
+            "ocean",
+            "dreams",
+            "relax",
+            "waves"
+        ],
+        "popularity_score": 86
+    },
+    {
+        "audio": "track17",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b273ac28d659953db929c10b84de",
+        "title": "Aurora Nights",
+        "artist": "Polar Lights",
+        "price": {
+            "monthly": "$2.25",
+            "exclusive": "$225"
+        },
+        "genre": "Ambient",
+        "free": false,
+        "trending": true,
+        "release_date": "2024-01-25",
+        "tags": [
+            "ambient",
+            "aurora",
+            "night",
+            "chill",
+            "polar"
+        ],
+        "popularity_score": 79
+    },
+    {
+        "audio": "track18",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2734d23fd1163491c851b3de20d",
+        "title": "Streetlight Serenade",
+        "artist": "Urban Soundscapes",
+        "price": {
+            "monthly": "$3.00",
+            "exclusive": "$300"
+        },
+        "genre": "Ambient",
+        "free": false,
+        "trending": false,
+        "release_date": "2024-02-18",
+        "tags": [
+            "jazz",
+            "streetlight",
+            "serenade",
+            "urban",
+            "night"
+        ],
+        "popularity_score": 73
+    },
+    {
+        "audio": "track19",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b2734f60d52542db91340ca10bc2",
+        "title": "Lunar Echoes",
+        "artist": "Moon Tunes",
+        "price": {
+            "monthly": "$2.00",
+            "exclusive": "$200"
+        },
+        "genre": "Electronic",
+        "free": true,
+        "trending": true,
+        "release_date": "2024-03-21",
+        "tags": [
+            "electronic",
+            "lunar",
+            "echoes",
+            "moon",
+            "ambient"
+        ],
+        "popularity_score": 81
+    },
+    {
+        "audio": "track20",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b273c2298058e29a5a8eb48acc79",
+        "title": "Twilight Grooves",
+        "artist": "Evening Shades",
+        "price": {
+            "monthly": "$3.50",
+            "exclusive": "$350"
+        },
+        "genre": "Hip Hop",
+        "free": false,
+        "trending": false,
+        "release_date": "2024-03-27",
+        "tags": [
+            "R&B",
+            "twilight",
+            "grooves",
+            "smooth",
+            "night"
+        ],
+        "popularity_score": 68
+    }
+]

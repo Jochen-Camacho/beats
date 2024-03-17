@@ -1,13 +1,93 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Roboto, "Helvetica Neue", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --black: #141414;
+  --lightBlack: #1a1a1a;
+  --L1Grey: #383838;
+  --L2Grey: #8e8e8e;
+  --L3Grey: #aaaaaa;
+  --primaryBlue: #005ff8;
+  --secondaryBlue: #1173cd;
+  --primaryOrange: orange;
+  --maxWidth: 1300px;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.pageCont {
+  background-color: black;
+  color: white;
+}
+
+.pageHeader {
+  padding: 20px 0;
+  margin-bottom: 15px;
+  font-family: Poppins, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.pageHead {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 500;
+}
+
+.innerPageCont {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+select {
+  background-color: black;
+  border: none;
+  color: white;
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+option {
+  padding: 10px 15px;
+}
+
+a {
+  color: var(--L3Grey);
+  text-decoration: none;
+}
+
+.fire {
+  color: var(--primaryOrange);
+}
+
+.alignDiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.errorMsg {
+  color: rgb(236, 73, 73);
+  font-size: 0.8rem;
+}
+
+.clickedElement {
+  background-color: #052fad48;
+  border: 1.5px solid blue;
+}
+
+html {
+  scrollbar-width: none;
+  scrollbar-color: darkgrey lightgrey;
+}
+
+.rotated {
+  transform: rotate(180deg);
 }

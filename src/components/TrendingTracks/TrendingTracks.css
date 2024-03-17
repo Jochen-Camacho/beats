@@ -1,0 +1,47 @@
+.tracksCont {
+  background-color: var(--lightBlack);
+  border-top: 1px solid rgba(128, 128, 128, 0.301);
+}
+
+.tracks {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  padding: 25px 25px;
+  font-family: Poppins, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.trackHeader {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.trackHead {
+  font-weight: 500;
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.trackHeader p {
+  cursor: pointer;
+}
+
+.tracksList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  overflow-x: auto;
+  padding: 0 25px;
+}
+
+@media only screen and (max-width: 900px) {
+  .tracks {
+    padding: 25px 0;
+  }
+  .trackHeader {
+    padding: 0 25px;
+  }
+  .tracksList {
+    padding: 0;
+  }
+}

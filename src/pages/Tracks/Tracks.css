@@ -1,0 +1,154 @@
+.tracksPageCont {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border: none;
+}
+
+.tracksNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 5vh;
+  overflow-x: auto;
+}
+
+.trackNavItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--L3Grey);
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.trackNavItemImage {
+  width: 70px;
+  height: 70px;
+  border: 2px solid var(--L2Grey);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trackNavItemName {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: clamp(0.5rem, 5vw, 1rem);
+  text-wrap: nowrap;
+}
+
+.trackNavItemIcon {
+  font-size: 1.5rem;
+  margin: auto;
+  color: white;
+}
+
+.trackNavItemIcon svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tracksFilter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.5px solid rgba(128, 128, 128, 0.301);
+  padding: 35px 0;
+}
+
+.tracksFilterEnd {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 1rem;
+}
+
+.tracksFilterStart {
+  margin-left: 5px;
+  display: flex;
+  gap: 35px;
+}
+
+.tracksDisplayOptions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 15px;
+  background-color: var(--lightBlack);
+  border-radius: 10px;
+}
+
+.tracksFilterSort {
+  color: var(--L3Grey);
+}
+
+.tracksFilterItem {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.tracksFilterItem .icon {
+  margin-left: 5px;
+}
+
+.tracksDisplayList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.noSearchMsg {
+  text-align: center;
+  font-size: clamp(1.25rem, 5vw, 3rem);
+  width: 70%;
+  margin: 20px auto;
+  padding-bottom: 40px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .tracksFilter {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .tracksFilterStart,
+  .tracksFilterEnd {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+  .tracksFilterEnd {
+    grid-row: 1;
+  }
+  .tracksFilterStart {
+    grid-row: 2;
+  }
+  .tracksFilterItem {
+    margin: 0;
+  }
+  .tracksDisplayOptions {
+    gap: 10px;
+    padding: 2px 5px;
+    background-color: black;
+    border: 2px solid var(--L3Grey);
+    border-radius: 10px;
+  }
+  .tracksDisplayList {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
