@@ -6,12 +6,11 @@
 }
 
 .paymentCartItems {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   padding: 30px 30px;
   border-radius: 10px;
-
-  align-items: flex-start;
 }
 
 .paymentItemCont {
@@ -28,6 +27,10 @@
   width: 100px;
   border-radius: 5px;
   height: 100px;
+}
+
+.paymentItemMeta:first-child {
+  font-size: clamp(0.75rem, 5vw, 1rem);
 }
 
 .paymentItemMeta {
@@ -119,11 +122,23 @@
   gap: 10px;
 }
 
+.cartItemContent {
+  margin: auto;
+}
+
 @media only screen and (max-width: 900px) {
   .paymentCont {
     grid-template-columns: 1fr;
   }
   .cardInfoCont {
     padding: 20px;
+  }
+  .paymentItemCont img {
+    width: 60px;
+    border-radius: 5px;
+    height: 60px;
+  }
+  .paymentCartItems {
+    padding: 0px;
   }
 }

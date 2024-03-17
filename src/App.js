@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
 import { Feed } from "./pages/Feed/Feed";
@@ -20,7 +20,7 @@ function App() {
   console.log(trackData.comments);
   return (
     <React.StrictMode>
-      <BrowserRouter>
+      <HashRouter>
         <AuthProvider>
           <TrackProvider>
             <Routes>
@@ -45,7 +45,7 @@ function App() {
             </Routes>
           </TrackProvider>
         </AuthProvider>
-      </BrowserRouter>
+      </HashRouter>
     </React.StrictMode>
   );
 }

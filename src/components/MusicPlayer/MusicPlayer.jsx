@@ -20,10 +20,11 @@ export const MusicPlayer = () => {
   const [audioCurrentTime, setAudioCurrentTime] = React.useState(0);
   const [audioDuration, setAudioDuration] = React.useState(0);
 
-  const handleVolumeChange = (newValue) => {
-    setVolumeValue(newValue);
+  const handleVolumeChange = (event, newValue) => {
+    const volume = Number.isFinite(newValue) ? newValue : lastVolume;
+    setVolumeValue(volume);
     if (audioRef.current) {
-      audioRef.current.volume = newValue / 100;
+      audioRef.current.volume = volume / 100;
     }
   };
 
