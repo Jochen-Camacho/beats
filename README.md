@@ -35,10 +35,10 @@ To get this project running locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Jochen-Camacho/Beats.git
+git clone https://github.com/Jochen-Camacho/beats.git
 
 # Navigate to the project directory
-cd Beats
+cd beats
 
 # Install dependencies
 npm install
