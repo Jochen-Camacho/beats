@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { WaveForm } from "../../components/WaveForm/WaveForm";
 import { IoCartOutline } from "react-icons/io5";
 import comments from "../../data/comment.json";
-import users from "../../data/users.json";
+import Comment from "../../components/Comment/Comment";
 import { FaThumbsUp } from "react-icons/fa";
 import placeholderUser from "../../assests/images/placeholderUser.jpg";
 import { useAuth } from "../../hooks/useAuth";
@@ -26,52 +26,36 @@ export const TrackDetails = ({ tracks }) => {
   const { addItemToCart } = useCart();
   const [selectedPrice, setSelectedPrice] = React.useState("Monthly");
 
+  const handleCommentLike = React.useCallback(
+    (commentId) => {
+      setCommentData(
+        commentData.map((comment) => {
+          if (comment.commentBody === commentId) {
+            return {
+              ...comment,
+              likes: comment.isLiked ? comment.likes - 1 : comment.likes + 1,
+              isLiked: !comment.isLiked,
+            };
+          }
+          return comment;
+        })
+      );
+    },
+    [commentData, setCommentData]
+  );
+
   React.useEffect(() => {
     const filteredComments = commentData
       .filter((comment) => comment.trackTitle === selectedTrack.title)
-      .map((comment, index) => {
-        const user = users.find((user) => user.username === comment.username);
-        return (
-          <div className="trackDetCommentOuter" key={index}>
-            <div className="trackDetComment">
-              <img src={user.user_image} alt={`${user.username}'s avatar`} />
-              <div className="commentData">
-                <div className="commentUser">{comment.username}</div>
-                <div className="commentBody">{comment.commentBody}</div>
-                <div className="commentMeta">
-                  <FaThumbsUp
-                    className="icon"
-                    style={{
-                      color: comment.isLiked
-                        ? "var(--primaryBlue)"
-                        : "var(--L2Grey)",
-                    }}
-                    onClick={() => handleCommentLike(comment.commentBody)}
-                  />
-                  <span>{comment.likes}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        );
-      });
+      .map((comment, index) => (
+        <Comment
+          key={index}
+          comment={comment}
+          handleCommentLike={handleCommentLike}
+        />
+      ));
     setDisplayComments(filteredComments);
-  }, [selectedTrack, commentData]);
-
-  const handleCommentLike = (commentId) => {
-    setCommentData(
-      commentData.map((comment) => {
-        if (comment.commentBody === commentId) {
-          if (comment.isLiked) {
-            return { ...comment, likes: comment.likes - 1, isLiked: false };
-          } else {
-            return { ...comment, likes: comment.likes + 1, isLiked: true };
-          }
-        }
-        return comment;
-      })
-    );
-  };
+  }, [selectedTrack, commentData, handleCommentLike]);
 
   const handlePostComment = (event) => {
     event.preventDefault();
@@ -81,22 +65,16 @@ export const TrackDetails = ({ tracks }) => {
       if (commentContent.trim() === "") {
         setCommentError(true);
       } else {
-        const newCommentJSX = (
-          <div className="trackDetCommentOuter">
-            <div className="trackDetComment">
-              <img src={placeholderUser} alt="Placeholder" />
-              <div className="commentData">
-                <div className="commentUser">Test</div>
-                <div className="commentBody">{commentContent}</div>
-                <div className="commentMeta">
-                  <FaThumbsUp className="icon" />
-                  <span>0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        );
-        setDisplayComments((prevComments) => [newCommentJSX, ...prevComments]);
+        const newComment = {
+          commentId: commentData.length + 1,
+          commentBody: commentContent,
+          username: user.username,
+          trackTitle: selectedTrack.title,
+          likes: 0,
+        };
+
+        console.log(newComment);
+        setCommentData((prevData) => [newComment, ...prevData]);
         setCommentContent("");
         setCommentError(false);
       }

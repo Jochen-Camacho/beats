@@ -14,10 +14,15 @@ export default function useCart() {
     });
   };
 
+  const clear = () => {
+    setCart([]);
+  };
+
   return {
     cart,
     setCart,
     removeItemFromCart,
     addItemToCart,
+    clear,
   };
 }

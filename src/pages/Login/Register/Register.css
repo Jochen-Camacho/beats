@@ -1,10 +1,11 @@
-.passwordCont {
-  display: flex;
-}
-
 @media only screen and (max-width: 900px) {
-  .passwordCont {
+  .errorCont {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .errorCont input {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 }

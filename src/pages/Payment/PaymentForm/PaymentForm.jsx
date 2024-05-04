@@ -2,8 +2,10 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
+import useCart from "../../../hooks/useCart";
 
 export const PaymentForm = () => {
+  const { clear } = useCart();
   const navigvate = useNavigate();
   const formik = useFormik({
     initialValues: {
@@ -29,6 +31,7 @@ export const PaymentForm = () => {
       firstName: Yup.string().required("Required"),
     }),
     onSubmit: (values) => {
+      clear();
       navigvate("/payment/success");
     },
   });

@@ -91,3 +91,12 @@ html {
 .rotated {
   transform: rotate(180deg);
 }
+
+.formError {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  font-size: 0.75rem;
+  color: var(--primaryBlue);
+}

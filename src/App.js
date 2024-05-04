@@ -14,6 +14,7 @@ import { TrackProvider } from "./components/context/TrackContext/TrackProvider";
 import { AuthProvider } from "./hooks/useAuth";
 import { Payment } from "./pages/Payment/Payment";
 import { PaymentSuccess } from "./pages/Payment/PaymentSuccess/PaymentSuccess";
+import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   trackData.forEach((track) => console.log(track.comments));
@@ -21,6 +22,7 @@ function App() {
   return (
     <React.StrictMode>
       <HashRouter>
+        <ScrollToTop />
         <AuthProvider>
           <TrackProvider>
             <Routes>
