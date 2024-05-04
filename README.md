@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Beats - Audio Track Distribution Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a web application that provides a platform for users to view and purchase audio tracks. It uses React libraries and apis to effectively display content and allow for intuitive user experience. 
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication**: Login and Register System for users before they can make comments or likes.
+- **Audio Track Player**: Plays audio directly from the website, tracking time played allowing for users to adjust the volume and go backwards or forwards.
+- **Feed Posts**: Feed where artists can showcase their music and listeners can explore their favorite tracks. Users can also like these posts
+- **Tracks Filtering System**: Comprehensive filter options for difference audio types, genres, prices and popularity.
+- **Popularity & Trending System**: Uses a trending bool and popularity score to determine top tracks
+- **Responsive Design**: Fully responsive web design that works on mobile, tablets, and desktops.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Used for building the user interface with state management.
+- **React Router**: Manages navigation within the application.
+- **Context API**: Manage global states of items in the application.
+- **formik and Yup**: Manage and Validate forms.
+- **MaterialUI**: Used for some styled components on the application.
+- **wavesurfer**: Create waveforms of audio tracks.
 
-### `npm test`
+## Areas for Improvement
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Implementing Robust Sercurity Login and Register**
+- **Animations for Improved User Experience**
+- **Backend Service for CRUD Operations on Tracks**
+- **Admin Operations**
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get this project running locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+# Clone the repository
+git clone https://github.com/Jochen-Camacho/Beats.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Navigate to the project directory
+cd Beats
 
-### `npm run eject`
+# Install dependencies
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Start the development server
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## References
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Inspiration from [BeatStars](https://www.beatstars.com/) for UI design and platform idea. 
+Audio Tracks from producer [AVGOTDRIP](https://open.spotify.com/artist/7igrDEryu1H8kwrg2jMP06?si=0Cu6jO-BTpuhvZPtJWpRkA)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
